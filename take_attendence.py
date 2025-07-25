@@ -4,36 +4,7 @@ Script to detect faces and mark attendance.
 import cv2
 import face_recognition
 import numpy as np
-import time
-from datetime import datetime
-import pickle
-import os
-from face_detection_utils import (
-    initialize_directories,
-    load_face_encodings,
-    load_students_data,
-    detect_faces,
-    recognize_faces,
-    draw_face_boxes,
-    update_attendance_excel
-)
-
-def take_attendance():
-    """Take attendance using face recognition."""
-    # Initialize required directories
-    initialize_directories()
-    
-    # Load data
-    known_face_encodings = load_face_encodings()
-    students_data = load_students_data()
-    
-    if not known_face_encodings or not students_data:
-        print("No students registered yet. Please register students first.")
-        return
-    
-    # Create lists of known face encodings and names
-    roll_nos = list(students_data.keys())
-    names = [students_data[roll_no]["name"] for roll_no in roll_nos]
+import tzl_nos]
     
     # Select subject for marking attendance
     print("\nAvailable subjects:")
