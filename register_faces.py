@@ -215,6 +215,7 @@ def main():
             view_registered_students()
         elif choice == '3':
             delete_student()
+            
         elif choice == '4':
             print("Exiting registration system...")
             break
