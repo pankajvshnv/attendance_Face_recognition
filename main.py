@@ -6,7 +6,7 @@ import sys
 import time
 from face_detection_utils import initialize_directories
 
-def print_banner():
+def print_banne
     """Print welcome banner for the application."""
     banner = """
     ╔══════════════════════════════════════════════════════════════════════╗
