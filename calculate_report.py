@@ -8,6 +8,9 @@ from datetime import datetime
 import matplotlib.pyplot as plt
 from face_detection_utils import initialize_directories, load_students_data
 
+
+
+
 # Constant for the minimum required attendance percentage
 MIN_ATTENDANCE_PERCENTAGE = 75
 
