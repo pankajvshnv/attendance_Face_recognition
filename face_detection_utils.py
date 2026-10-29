@@ -9,6 +9,7 @@ import pickle
 from datetime import datetime
 import pandas as pd
 
+
 # Constants
 FACES_DIR = 'faces'
 ENCODINGS_FILE = os.path.join(FACES_DIR, 'encodings.pkl')
@@ -54,6 +55,7 @@ def save_students_data(students_data):
     with open(STUDENTS_FILE, 'wb') as f:
         pickle.dump(students_data, f)
 
+
 def detect_faces(frame):
     """
     Detect faces in the given frame.
@@ -68,7 +70,7 @@ def detect_faces(frame):
     # Convert BGR to RGB (face_recognition uses RGB)
     rgb_frame = cv2.cvtColor(frame, cv2.COLOR_BGR2RGB)
     
-    # Find all face locations and encodings in the current frame
+
     face_locations = face_recognition.face_locations(rgb_frame)
     face_encodings = face_recognition.face_encodings(rgb_frame, face_locations)
     
